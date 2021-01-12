@@ -23,7 +23,6 @@ export class CharactersPageComponent implements OnInit {
   
   getCharacters(page){
     this.charactersService.getCharacters(page).subscribe((res: any) => {
-      console.log(res.results)
       this.characters = res.results;
       this.pageInfo = {...res.info, page}
   });

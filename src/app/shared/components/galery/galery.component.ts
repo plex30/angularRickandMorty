@@ -1,6 +1,5 @@
 import { Component, Input, OnInit } from '@angular/core';
-import { ActivatedRoute } from '@angular/router';
-import { CharactersService } from '../../services/characters.service';
+
 
 @Component({
   selector: 'app-galery',
