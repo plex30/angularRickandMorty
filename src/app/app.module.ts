@@ -10,6 +10,7 @@ import { GaleryComponent } from './shared/components/galery/galery.component';
 import { PaginationComponent } from './shared/components/pagination/pagination.component';
 import { CharacterDetailPageComponent } from './pages/characters-page/pages/character-detail-page/character-detail-page.component';
 import { ContactPageComponent } from './pages/contact-page/contact-page.component';
+import { ReactiveFormsModule } from '@angular/forms';
 
 
 @NgModule({
@@ -27,7 +28,8 @@ import { ContactPageComponent } from './pages/contact-page/contact-page.componen
   imports: [
     BrowserModule,
     AppRoutingModule,
-    HttpClientModule
+    HttpClientModule,
+    ReactiveFormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]
