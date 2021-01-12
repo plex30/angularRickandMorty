@@ -8,6 +8,7 @@ import { LocationsService } from 'src/app/shared/services/locations.service';
 })
 export class LocationPageComponent implements OnInit {
   locations:any;
+  pageInfo ={};
   constructor(private locationsService: LocationsService) { }
 
   ngOnInit(): void {
@@ -18,7 +19,7 @@ export class LocationPageComponent implements OnInit {
     this.locationsService.getLocations(page).subscribe((res: any) => {
       console.log(res.results)
       this.locations = res.results;
-     /*  this.pageInfo = {...res.info, page} */
+      this.pageInfo = {...res.info, page}
   });
   }
 

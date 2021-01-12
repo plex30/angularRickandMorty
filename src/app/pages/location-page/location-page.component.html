@@ -1,1 +1,2 @@
 <app-galery [list]="locations"></app-galery>
+<app-pagination [pageInfo]="pageInfo" (sendPageEmitter)="getLocations($event)"></app-pagination>
